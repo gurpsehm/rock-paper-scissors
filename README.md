@@ -30,3 +30,11 @@ Otherwise if the computer's move is one that beats the player's move
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Display the computer winning
 
 Otherwise display a message showing that the match was a tie
+
+# What I Learned
+
+* Practicing how to create a plan for the project that I'm working on
+* Learning how to create Pseudocode before starting a project 
+* Learned the basics of making a JavaScript project and how to link it to an HTML file
+* Learning the basics of how to use for loops to help create a score system for the game being created
+* Practice Google searching problems that I can't figure out on my own
