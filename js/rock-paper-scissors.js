@@ -1,4 +1,4 @@
-// Using a random
+// Method that chooses a random input to use for the computer to choose a move with
 function computerPlay () {
   const moves = Array("rock", "paper", "scissors");
   const move = moves[Math.floor(Math.random() * moves.length)];
@@ -7,30 +7,77 @@ function computerPlay () {
 
 // Compares the choice of the player and the choice of the computer and returns a winner after comparing the moves.
 function playRound(playerSelection, computerSelection) {
+  let winner;
+
   if (playerSelection === "paper" &&  computerSelection === "rock") {
-    return "You Win! Paper beats Rock";
+    console.log("You Win! Paper beats Rock");
+    winner = "player";
+    return winner;
   }
   else if (playerSelection === "rock" && computerSelection === "scissors") {
-    return "You Win! Rock beats Scissors";
+    console.log("You Win! Rock beats Scissors");
+    winner = "player";
+    return winner;
   }
   else if (playerSelection === "scissors" && computerSelection === "paper") {
-    return "You Win! Scissors beats Paper";
+    console.log("You Win! Scissors beats Paper");
+    winner = "player";
+    return winner;
   }
   else if (computerSelection === "paper" &&  playerSelection === "rock") {
-    return "You Lose! Paper beats Rock";
+    console.log("You Lose! Paper beats Rock");
+    winner = "computer";
+    return winner;
   }
   else if (computerSelection === "rock" && playerSelection === "scissors") {
-    return "You Lose! Rock beats Scissors";
+    console.log("You Lose! Rock beats Scissors");
+    winner = "computer";
+    return winner;
   }
   else if (computerSelection === "scissors" && playerSelection === "paper") {
-    return "You Lose! Scissors beats Paper";
+    console.log("You Lose! Scissors beats Paper");
+    winner = "computer";
+    return winner;
   }
   else {
-    return "Tie Game!";
+    console.log("Tie Game!");
+    winner = "draw";
+    return winner;
   }
 }
 
-const playerSelection = "rock";
-const computerSelection = computerPlay();
+// Function starts and plays through a best of 5 game of rock paper scissors
+function game() {
+  let playerScore = 0;
+  let computerScore = 0;
 
-console.log(playRound(playerSelection, computerSelection));
+  for (let i = 0; i < 5; i++) {
+    let playerSelection = prompt("Choose between rock, paper, or scissors.").toLowerCase();
+    let computerSelection = computerPlay();
+    let playGame = playRound(playerSelection, computerSelection);
+
+    if (playGame === "player") {
+      playerScore++;
+    }
+    else if (playGame === "computer") {
+      computerScore++;
+    }
+    else {
+      i--;
+    }
+  }
+
+  // Checks to see if the player or computer won
+  if (playerScore > computerScore) {
+    return "The player has won with a score of " + playerScore + " to " + computerScore;
+  }
+  else if (playerScore < computerScore) {
+    return "The computer has won with a score of " + computerScore + " to " + playerScore;
+  }
+  else {
+    return "Tie Game";
+  }
+}
+
+// Displays the game of rock paper scissors into the console 
+console.log(game());
