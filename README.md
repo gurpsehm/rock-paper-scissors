@@ -38,3 +38,10 @@ Otherwise display a message showing that the match was a tie
 * Learned the basics of making a JavaScript project and how to link it to an HTML file
 * Learning the basics of how to use for loops to help create a score system for the game being created
 * Practice Google searching problems that I can't figure out on my own
+
+# References
+
+* Github Logo: Font Awesome Github Icon, CC BY-NC 4.0 <https://fontawesome.com/icons/github?s=brands>, via Font Awesome
+* Rock Image: Clker-Free-Vector-Images, Pixabay License <https://pixabay.com/vectors/rock-paper-scissors-rock-hand-296854/>, via Pixabay
+* Paper Image: Clker-Free-Vector-Images, Pixabay License <https://pixabay.com/vectors/rock-paper-scissors-paper-hand-296855/>, via Pixabay
+* Scissors Image: Clker-Free-Vector-Images, Pixabay License <https://pixabay.com/vectors/rock-paper-scissors-scissors-hand-296853/>,via Pixabay
