@@ -39,6 +39,13 @@ Otherwise display a message showing that the match was a tie
 * Learning the basics of how to use for loops to help create a score system for the game being created
 * Practice Google searching problems that I can't figure out on my own
 
+# What I Learned Revisiting the Project
+
+* Learned how to utilize DOM Manipulation for features such as displaying on the fly scoring on the HTML Page
+* To allow myself breaks when frustrated and pick the project back up with a fresh more relaxed mindset
+* To refactor and completely rewrite parts of code
+* Learning how to use addEventListener and querySelectors
+
 # References
 
 * Github Logo: Font Awesome Github Icon, CC BY-NC 4.0 <https://fontawesome.com/icons/github?s=brands>, via Font Awesome
