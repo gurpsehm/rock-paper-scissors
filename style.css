@@ -1,0 +1,61 @@
+* {
+	font-family: "arial", "tahoma", "sans-serif";
+}
+
+body {
+	height: 97vh;
+	display: flex;
+	flex-direction: column;
+}
+
+button {
+	font-size: 20px;
+	border-radius: 6px;
+	height: 200px;
+	width: 200px;
+	padding-top:173px;
+}
+
+#header, #scoreResults, #btnContainer, #roundResults {
+	display: flex;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	justify-content: center;
+	align-items: center;
+}
+
+#scoreResults, #roundResults {
+	font-size: 21px;
+}
+
+#btnContainer {
+	justify-content: space-around;
+	padding-right: 450px;
+	padding-left: 450px;
+}
+
+#btnRock, #btnPaper, #btnScissors {
+	background-repeat: no-repeat;
+	background-color: white;
+} 
+
+#btnRock {
+	background-image: url("./images/rock.svg");
+}
+
+#btnPaper {
+	background-image: url("./images/paper.svg");
+}
+
+#btnScissors {
+	background-image: url("./images/scissors.svg");
+}
+
+.footer {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin-top: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
